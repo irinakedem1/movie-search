@@ -1,0 +1,23 @@
+<div class="movie-details-container">
+<!--  {{movieDetails | json}}-->
+  <div class="media">
+    <div class="media-body">
+      <h4>{{movieDetails.Title}}</h4>
+      <table>
+        <tr>
+          <td>Year: </td>
+          <td>{{movieDetails.Year}}</td>
+        </tr>
+        <tr>
+          <td>imdbID: </td>
+          <td>{{movieDetails.imdbID}}</td>
+        </tr>
+        <tr>
+          <td>Type: </td>
+          <td>{{movieDetails.Type}}</td>
+        </tr>
+      </table>
+    </div>
+    <span class="image"><img class="mr-3" [src]="movieDetails.Poster" alt=""></span>
+  </div>
+</div>

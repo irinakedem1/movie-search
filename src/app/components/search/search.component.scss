@@ -1,0 +1,13 @@
+input {
+  &.ng-invalid {
+    background-color: papayawhip;
+  }
+}
+
+.error-message {
+  color: red;
+}
+
+button[type=submit] {
+  margin-right: 5px;
+}

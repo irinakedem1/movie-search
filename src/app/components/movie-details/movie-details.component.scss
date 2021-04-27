@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.movie-details-container {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: gainsboro;
+  width: 100%;
+}
+
+span {
+  &.image {
+    display: inline-block;
+
+    img {
+      width: 40%;
+    }
+  }
+}
+

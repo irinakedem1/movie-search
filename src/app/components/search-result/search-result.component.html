@@ -1,0 +1,19 @@
+<h5>Search Result:</h5>
+<div *ngIf="searchResultData">
+  <div *ngIf="searchResultData.Response==='True' else error">
+    <div class="alert alert-success">
+      {{searchResultData.totalResults}} {{searchResultData.totalResults === "1" ? "movie" : "movies"}} found
+    </div>
+    <div class="search-result-container">
+      <div *ngFor="let movie of searchResultData?.Search">
+        <app-movie-details [movieDetails]="movie"></app-movie-details>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #error>
+  <div class="alert alert-success">
+    An error occurred. {{searchResultData.Error === 'Too many results.' ? searchResultData.Error + ' Please narrow your search.' : searchResultData.Error}}</div>
+</ng-template>
+

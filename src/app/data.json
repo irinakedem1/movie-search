@@ -1,0 +1,76 @@
+{
+  "Search": [
+    {
+      "Title": "Good Night, and Good Luck.",
+      "Year": "2005",
+      "imdbID": "tt0433383",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTY0NzQ2NDg2Ml5BMl5BanBnXkFtZTYwMzcwOTY2._V1_SX300.jpg"
+    },
+    {
+      "Title": "Good Luck Chuck",
+      "Year": "2007",
+      "imdbID": "tt0452625",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTU1NzM1MTE1OV5BMl5BanBnXkFtZTYwNDQyMjU3._V1_SX300.jpg"
+    },
+    {
+      "Title": "Good Luck Charlie",
+      "Year": "2010–2014",
+      "imdbID": "tt1415889",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjI5NjUzMTcwNF5BMl5BanBnXkFtZTgwODE3NzQxMDE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Good Luck Charlie, It's Christmas!",
+      "Year": "2011",
+      "imdbID": "tt1828976",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOGFhZjdkOTQtNTcwNi00ZTJlLWFiYTgtMTIxYWYwMTZlMmFkXkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Good Luck",
+      "Year": "2014",
+      "imdbID": "tt2986122",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODFiYWMwMzktMTMxMy00M2RkLWE1OTAtNzA3ZTlkNzRmYmVjXkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Good Luck!!",
+      "Year": "2003–",
+      "imdbID": "tt0399971",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYWQ0MzBjYzMtNGYyOC00ZGIxLWI3YjYtNWNhMWNhMTAyZTBkXkEyXkFqcGdeQXVyMjU0ODQ5NTA@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Good Luck",
+      "Year": "1996",
+      "imdbID": "tt0116439",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjA5MjExMjI2Nl5BMl5BanBnXkFtZTYwMDkwODk4._V1_SX300.jpg"
+    },
+    {
+      "Title": "Good Luck Girl!",
+      "Year": "2012–",
+      "imdbID": "tt2250040",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZmM5Y2U4MDgtZWEzNy00MTY3LTk1NmUtY2YwOWU1ZTYyODQzXkEyXkFqcGdeQXVyMzQ3OTE4NTk@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Helluva Good Luck",
+      "Year": "1999",
+      "imdbID": "tt0202703",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYmQ2YTdjYzMtYTRmOS00YzMyLTk2N2ItMDZhOGJjMTgxMWM1XkEyXkFqcGdeQXVyMjIxMzMyMQ@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Good Luck, Miss Wyckoff",
+      "Year": "1979",
+      "imdbID": "tt0079228",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZjliYTg2OWQtNTU0My00ZjIwLWE1MmEtOGY0NWM5YTcyMmVjXkEyXkFqcGdeQXVyMTE0NTU3ODQ@._V1_SX300.jpg"
+    }
+  ],
+  "totalResults": "101",
+  "Response": "True"
+}

@@ -1,0 +1,21 @@
+<form (ngSubmit)="search()" #form="ngForm">
+  <div class="form-group row">
+    <label for="title" class="col-sm-2 col-form-label">Title</label>
+    <div class="col-sm-10">
+      <input #searchCriteriaField="ngModel" type="text" class="form-control" id="title" placeholder="Title"
+             name="searchCriteria" [(ngModel)]="searchCriteria.title" required>
+      <div *ngIf="searchCriteriaField.invalid && form.submitted" class="error-message">
+        Please provide a title.
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="releaseYear" class="col-sm-2 col-form-label">Year of release</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="releaseYear" placeholder="Year of release"
+             name="releaseYear" [(ngModel)]="searchCriteria.releaseYear">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Search</button>
+  <button type="reset" class="btn btn-secondary">Reset</button>
+</form>
