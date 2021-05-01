@@ -17,7 +17,6 @@ export class SearchComponent {
   searchResultData: SearchResult;
 
   constructor(private movieApi: MoveApiService) {
-    this.searchCriteria.title = 'pianist';
   }
 
   submit(): void {
