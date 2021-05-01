@@ -1,21 +1,9 @@
-<div class="movie-details-container">
-<!--  {{movieDetails | json}}-->
-  <div class="media">
-    <div class="media-body">
-      <h4>{{movieDetails.Title}}</h4>
-      <div class="row">
-        <div class="col col-1">Year:</div>
-        <div class="col col-11">{{movieDetails.Year}}</div>
-      </div>
-      <div class="row">
-        <div class="col col-1">imdbID:</div>
-        <div class="col col-11">{{movieDetails.imdbID}}</div>
-      </div>
-      <div class="row">
-        <div class="col col-1">Type:</div>
-        <div class="col col-11">{{movieDetails.Type}}</div>
-      </div>
-    </div>
-    <span class="image"><img class="mr-3" [src]="movieDetails.Poster" alt=""></span>
-  </div>
+<figure>
+  <img [src]="movieDetails.Poster" alt="The poster is missing.">
+  <figcaption>
+    <h3>{{movieDetails.Title}},   {{movieDetails.Year}}</h3>
+  </figcaption>
+</figure>
+<div class="details">
+  imdb: {{movieDetails.imdbID}}
 </div>

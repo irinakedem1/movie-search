@@ -6,12 +6,10 @@ import {SearchResult} from '../../model/search-result';
   templateUrl: './search-result.component.html',
   styleUrls: ['./search-result.component.scss']
 })
-export class SearchResultComponent implements OnInit {
+export class SearchResultComponent{
   @Input() searchResultData: SearchResult;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
 
 }

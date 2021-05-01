@@ -1,9 +1,9 @@
-<form (ngSubmit)="search()" #form="ngForm">
+<form (ngSubmit)="submit()" #form="ngForm">
   <div class="form-group row">
     <label for="title" class="col-sm-2 col-form-label">Title</label>
     <div class="col-sm-10">
       <input #searchCriteriaField="ngModel" type="text" class="form-control" id="title" placeholder="Title"
-             name="searchCriteria" [(ngModel)]="searchCriteria.title" required>
+             name="searchCriteria" [(ngModel)]="searchCriteria.title" required (ngModelChange)="onSearchChange()">
       <div *ngIf="searchCriteriaField.invalid && form.submitted" class="error-message">
         Please provide a title.
       </div>
@@ -13,9 +13,25 @@
     <label for="releaseYear" class="col-sm-2 col-form-label">Year of release</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" id="releaseYear" placeholder="Year of release"
-             name="releaseYear" [(ngModel)]="searchCriteria.releaseYear">
+             name="releaseYear" [(ngModel)]="searchCriteria.releaseYear" (ngModelChange)="onSearchChange()">
     </div>
   </div>
   <button type="submit" class="btn btn-primary">Search</button>
   <button type="reset" class="btn btn-secondary">Reset</button>
+
+  <div class="search-result" *ngIf="searchResultData">
+    <div *ngIf="searchResultData?.Response==='True' else error">
+      <div class="alert alert-success">
+        {{searchResultData.totalResults}} {{searchResultData.totalResults === "1" ? "movie" : "movies"}} found
+      </div>
+      <div class="pagination">
+        <pagination *ngIf="showPagination()" [totalItems]="searchResultData?.totalResults"
+                    (pageChanged)="onPageChanged($event)"></pagination>
+      </div>
+    </div>
+    <ng-template #error>
+      <div class="alert alert-danger">
+        {{searchResultData.Error === 'Too many results.' ? searchResultData.Error + ' Please narrow your search.' : searchResultData.Error}}</div>
+    </ng-template>
+  </div>
 </form>

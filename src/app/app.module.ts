@@ -9,6 +9,7 @@ import {FormsModule} from '@angular/forms';
 import { SearchResultComponent } from './components/search-result/search-result.component';
 import {CommonModule} from '@angular/common';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { MovieDetailsComponent } from './components/movie-details/movie-details.
     CommonModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    PaginationModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]

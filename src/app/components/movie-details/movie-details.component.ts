@@ -6,13 +6,6 @@ import {MovieDetails} from '../../model/movie-details';
   templateUrl: './movie-details.component.html',
   styleUrls: ['./movie-details.component.scss']
 })
-export class MovieDetailsComponent implements OnInit {
+export class MovieDetailsComponent  {
   @Input() movieDetails: MovieDetails;
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
 }

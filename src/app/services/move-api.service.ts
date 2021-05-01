@@ -14,8 +14,8 @@ export class MoveApiService {
   constructor(private httpClient: HttpClient) {
   }
 
-  findMovies(searchCriteria: SearchCriteria): Observable<SearchResult> {
-    return this.httpClient.get<SearchResult>(this.buildUrl(searchCriteria))
+  findMovies(searchCriteria: SearchCriteria, page?: number): Observable<SearchResult> {
+    return this.httpClient.get<SearchResult>(this.buildUrl(searchCriteria, page))
       .pipe(
         catchError(this.handleHttpError)
       );
@@ -26,7 +26,8 @@ export class MoveApiService {
     return of({Response: 'False', Error: 'Sorry, something happened. Please try again later.'} as SearchResult);
   }
 
-  private buildUrl(searchCriteria: SearchCriteria): string {
-    return `${omdbApi}?s=${searchCriteria.title}&y=${searchCriteria.releaseYear || ''}&apiKey=${apiKey}`;
+  private buildUrl(searchCriteria: SearchCriteria, page): string {
+    const url = `${omdbApi}?s=${searchCriteria.title}&y=${searchCriteria.releaseYear || ''}&apiKey=${apiKey}`;
+    return page ? url + `&page=${page}` : url;
   }
 }
